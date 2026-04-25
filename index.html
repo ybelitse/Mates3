@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Apple Color Emoji'}
+    span.s2 {font: 12.0px 'Lucida Grande'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;MathProfe Prádena - 20 Retos&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--verde-pradena: #2e7d32;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--verde-claro: #a5d6a7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--tierra: #8d6e63;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--cielo: #e3f2fd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--sol: #ffb300;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--blanco: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f1f8e9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#timer-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 3px solid var(--verde-pradena);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 10px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1000;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 850px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>header { text-align: center; margin-bottom: 30px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 { color: var(--tierra); margin-bottom: 5px; text-shadow: 1px 1px white; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Estilos de Aprendizaje */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--verde-claro);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.05);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--verde-claro);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--verde-pradena);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-body.active { display: block; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.visual-aid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #fffde7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Estilos de Retos */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#game-area {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 4px solid var(--verde-pradena);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 25px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.progress-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--verde-pradena);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-box { font-size: 1.4rem; font-weight: bold; margin-bottom: 20px; color: #444; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.options-grid {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(2, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-opt {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--cielo);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #2196f3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-opt:hover { background: #bbdefb; transform: translateY(-2px); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-help {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--sol);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hidden { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="timer-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">⏱️</span> &lt;span id="clock"&gt;00:00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;<span class="s1">🐏</span> Mates en Prádena <span class="s1">🌲</span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;¡Aprendemos y superamos 20 retos!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- SECCIÓN APRENDEMOS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section-header" onclick="toggleSection('rep-div')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;1. Aprendemos a Dividir (Repartir) <span class="s1">🍎</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;<span class="s2">▼</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="rep-div" class="section-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Dividir es **repartir** algo en partes iguales. Si en el Colegio de Prádena tenemos 8 manzanas para 2 cestas, ponemos 4 en cada una.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="visual-aid"&gt;<span class="s1">🍎🍎🍎🍎</span> | <span class="s1">🍎🍎🍎🍎</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Truco:&lt;/strong&gt; La división es lo contrario de multiplicar. Si sabes que $2 \times 4 = 8$, ¡ya sabes que $8 \div 2 = 4$!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="section-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section-header" onclick="toggleSection('rep-frac')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;2. Aprendemos las Fracciones (Trozos) <span class="s1">🧀</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;<span class="s2">▼</span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="rep-frac" class="section-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Una fracción indica qué **parte** cogemos de algo entero. Si un queso de Prádena se corta en 4 partes iguales:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="visual-aid"&gt;<span class="s1">🧀</span> (1/4)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;El número de abajo (**4**) es el total de trozos. El de arriba (**1**) es el trozo que te comes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ZONA DE 20 RETOS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="game-area"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="start-screen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;<span class="s1">🏆</span> Desafío de los 20 Retos&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;¿Podrás completar todos los ejercicios de Prádena?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn-opt" style="background:var(--verde-pradena); color:white; border:none; padding: 15px 40px;" onclick="startGame()"&gt;¡Empezar Retos!&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="play-screen" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="progress-text" id="lvl-info"&gt;Reto 1 de 20&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="question-box" id="q-text"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="visual-aid" id="q-visual"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="options-grid" id="opt-grid"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="feedback" id="feedback"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn-help" onclick="showHelp()"&gt;<span class="s1">💡</span> Necesito una pista&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="win-screen" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 style="color:var(--verde-pradena)"&gt;¡ENHORABUENA! <span class="s1">🎉</span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Has superado los 20 retos de Prádena con éxito.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size: 4rem;"&gt;<span class="s1">🐑🌲🥇</span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn-opt" onclick="location.reload()" style="margin-top:20px;"&gt;Volver a empezar&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const retos = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "En la Cueva de los Enebralejos hay 6 linternas para 2 grupos. ¿Cuántas para cada uno?", v: "<span class="s1">🔦🔦🔦</span> | <span class="s1">🔦🔦🔦</span>", o: ["2", "3", "4", "6"], a: "3", h: "Divide 6 entre 2 o busca: ¿2 por cuánto es 6?" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Si cortamos un pan de Prádena en 2 trozos iguales, ¿cómo se llama cada parte?", v: "<span class="s1">🍞</span>", o: ["Un cuarto", "Un medio", "Un tercio", "Dos unos"], a: "Un medio", h: "Si son 2 partes, es la mitad (1/2)." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Un pastor tiene 10 ovejas y las reparte en 5 corrales. ¿Cuántas por corral?", v: "<span class="s1">🐏</span>...", o: ["2", "3", "5", "10"], a: "2", h: "¿Qué número por 5 da 10?" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Si una pizza de la plaza tiene 4 trozos y me como 1, ¿qué fracción he comido?", v: "<span class="s1">🍕</span>", o: ["1/2", "1/4", "3/4", "4/4"], a: "1/4", h: "1 trozo de un total de 4." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Tenemos 15 semillas para 3 macetas del huerto. ¿Cuántas en cada maceta?", v: "<span class="s1">🌱</span>...", o: ["3", "4", "5", "15"], a: "5", h: "Tabla del 3: 3 x ? = 15." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "En el patio hay 8 niños. La MITAD son de 3º de Primaria. ¿Cuántos son?", v: "<span class="s1">🏃</span>", o: ["2", "4", "6", "8"], a: "4", h: "La mitad es dividir entre 2." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Si dividimos un folio en 3 partes iguales y pintamos una, ¿qué fracción es?", v: "<span class="s1">📄</span>", o: ["1/2", "1/3", "2/3", "3/1"], a: "1/3", h: "1 parte pintada de 3 totales." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Un grupo de 12 amigos va a la Cueva. Si entran en grupos de 4, ¿cuántos grupos hay?", v: "<span class="s1">👥</span>...", o: ["2", "3", "4", "6"], a: "3", h: "¿Cuántas veces cabe el 4 en el 12?" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "En el huerto hay 12 tomates. Queremos hacer 2 bolsas iguales. ¿Cuántos por bolsa?", v: "<span class="s1">🍅</span>...", o: ["4", "5", "6", "12"], a: "6", h: "Divide 12 entre 2." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Si un chocolate tiene 8 onzas y me como 4, ¿qué fracción me he comido?", v: "<span class="s1">🍫</span>", o: ["1/4", "1/2", "4/1", "1/8"], a: "1/2", h: "4 es la mitad de 8." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Repartimos 20 cromos entre 4 niños en el recreo. ¿Cuántos para cada uno?", v: "<span class="s1">🃏</span>", o: ["4", "5", "6", "10"], a: "5", h: "Tabla del 4: 4 x ? = 20." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Tengo 9 flores y 3 jarrones. ¿Cuántas flores pongo en cada jarrón?", v: "<span class="s1">🌸</span>", o: ["2", "3", "4", "9"], a: "3", h: "9 dividido entre 3." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Si divido una tarta en 6 trozos y cojo 1, ¿qué fracción es?", v: "<span class="s1">🎂</span>", o: ["1/2", "1/6", "6/1", "1/3"], a: "1/6", h: "1 trozo de un total de 6." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Hay 14 balones y 2 clases. ¿Cuántos balones para cada clase?", v: "<span class="s1">⚽</span>", o: ["6", "7", "8", "14"], a: "7", h: "La mitad de 14." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Un pastor tiene 21 ovejas para 7 hijos. ¿Cuántas ovejas hereda cada hijo?", v: "<span class="s1">🐏</span>", o: ["2", "3", "4", "7"], a: "3", h: "7 x ? = 21." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "En el huerto plantamos 10 lechugas. La QUINTA PARTE (1/5) se han estropeado. ¿Cuántas son?", v: "<span class="s1">🥬</span>", o: ["1", "2", "5", "10"], a: "2", h: "Divide 10 entre 5." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Reparte 18 caramelos entre 2 amigos. ¿Cuántos para cada uno?", v: "<span class="s1">🍬</span>", o: ["7", "8", "9", "18"], a: "9", h: "La mitad de 18." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Si un huerto se divide en 8 parcelas y plantamos 3 con tomates, ¿qué fracción es?", v: "<span class="s1">🍅</span>", o: ["3/8", "8/3", "1/8", "3/5"], a: "3/8", h: "3 partes de 8 totales." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "Tenemos 24 libros para 4 estanterías del colegio. ¿Cuántos por estante?", v: "<span class="s1">📚</span>", o: ["4", "6", "8", "12"], a: "6", h: "24 dividido entre 4." },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ q: "¡Reto Final! Reparte 30 canicas entre 5 botes. ¿Cuántas en cada bote?", v: "<span class="s1">🔮</span>", o: ["5", "6", "10", "15"], a: "6", h: "5 x ? = 30." }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let index = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let time = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Reloj</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setInterval(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>time++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let m = Math.floor(time/60).toString().padStart(2,'0');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let s = (time%60).toString().padStart(2,'0');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('clock').innerText = `${m}:${s}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}, 1000);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleSection(id) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const el = document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>el.classList.toggle('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function startGame() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('start-screen').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('play-screen').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>loadReto();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function loadReto() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const r = retos[index];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('lvl-info').innerText = `Reto ${index + 1} de 20`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('q-text').innerText = r.q;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('q-visual').innerText = r.v;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('feedback').innerText = "";</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const grid = document.getElementById('opt-grid');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid.innerHTML = "";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>r.o.forEach(opt =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const b = document.createElement('button');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>b.className = "btn-opt";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>b.innerText = opt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>b.onclick = () =&gt; check(opt);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>grid.appendChild(b);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function check(val) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const r = retos[index];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const f = document.getElementById('feedback');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(val === r.a) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>f.innerHTML = "&lt;span style='color:var(--verde-pradena)'&gt;<span class="s1">✅</span> ¡Correcto! ¡Muy bien!&lt;/span&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>index++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if(index &lt; retos.length) loadReto();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>else showWin();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, 1200);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>f.innerHTML = "&lt;span style='color:red'&gt;<span class="s1">❌</span> ¡Casi! Inténtalo de nuevo.&lt;/span&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showHelp() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert(retos[index].h);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showWin() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('play-screen').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('win-screen').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
